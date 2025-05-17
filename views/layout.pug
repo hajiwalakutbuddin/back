@@ -1,16 +1,64 @@
 doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Restaurant
-        link(rel="stylesheet", href="style.css")
-        block head 
-    body 
-        section#navbar 
-            h1 Restaurant
+html
+  head
+    title Dance_pro
+    block scripts
+    block style 
+  body
+    nav#navbar.top 
+            #logo 
+                img(src="/static/images/logo1.webp" alt="Logo of Dance_Pro")
             ul
-                li: a(href="/") Home
-                li: a(href="/menu") Menu
-                li: a(href="/about") About Us
-                li: a(href="/contact") Contact Us
+                li
+                    a(href="/") Home
+                li
+                    a(href="/about") About
+                li 
+                    a(href="/services") Services
+                li 
+                    a(href="/classinfo") Class-Info
+                li
+                    a(href="/contact-us") Contact-us
+    block content
+    section#footer
+          .first 
+            h3 Dance_Pro
+            ul 
+                li 
+                    a(href="/") About 
+                li 
+                    a(href="/about") Help Center 
+                li 
+                    a(href="/services") Terms of use 
+                li 
+                    a(href="/classinfo") Cookies 
+                li 
+                    a(href="/contact-us") Privacy Policy
+          .second 
+            h3 Navigation 
+            ul 
+                li 
+                    a(href="/") Home 
+                li 
+                    a(href="/about") About 
+                li 
+                    a(href="/services") Services 
+                li 
+                    a(href="/classinfo") Class-Info 
+                li 
+                    a(href="/contact-us") Contact-us
+          .third
+            h3 Connect with us
+            ul 
+                li 
+                    a(href="/") Facebook 
+                li 
+                    a(href="/") Instagram 
+                li 
+                    a(href="www.twitter.com") Twitter 
+                li 
+                    a(href="/classinfo") LinkedIn 
+                li 
+                    a(href="/contact-us") YouTube
+    section#footer2
+        p © 2023 Dance_Pro. All rights reserved.  

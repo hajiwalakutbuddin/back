@@ -1,0 +1,50 @@
+extends layout.pug 
+
+block scripts 
+    script(src='/static/index.js')  
+
+block style
+    link(rel='stylesheet', href='/static/style.css')
+    link(rel="stylesheet", href="/static/style-contact-us.css")
+
+block content
+        section#member1
+            .mao 
+              h2  Become a Member
+              form(action="/contact-us", method="POST", id="member-form")
+                div 
+                  label(for="name") Name:
+                  br
+                  input(type="text", id="name", name="name",placeholder="Full Name",required)
+                  br 
+
+                div   
+                  label(for="Gender") Gender: 
+                  br
+                  input(type="text",name="Gender",placeholder="Your Gender",required)
+                div 
+                  label(for="age") Age:
+                  br
+                  input(type="number", id="age", name="age",   required)
+                  br 
+
+                div
+                  label(for="email") Email:
+                  br 
+                  input(type="email", id="email", name="email",   required)
+                  br  
+
+                div 
+                  label(for="phone") Phone:
+                  br  
+                  input(type="tel", id="phone", name="phone",   required)
+                  br  
+
+                .textarea 
+                  label(for="info") More Info:
+                  br  
+                  textarea(id="info", name="info",   rows="3", cols="26")
+                  br 
+
+                div 
+                  button(type="submit") Submit

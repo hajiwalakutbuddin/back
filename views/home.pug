@@ -1,12 +1,33 @@
 extends layout.pug 
 
-block head  
-    link(rel="stylesheet", href="style.css")
-    script(src="script.js")
+block scripts 
+    script(src='/static/index.js')  
 
-block content
-    h1 Welcome to the Restaurant
-    p This is a simple restaurant website built with Node.js and Pug.
-    p We serve delicious food and drinks.
-    p Visit us for a great dining experience!
-    p For more information, contact us at
+block style
+    link(rel='stylesheet', href='/static/style.css')
+block content 
+        section#home 
+                 img(src="static\\images\\h-1.jpg", alt="lol")
+                 h1 Welcome to Dance_Pro
+                 p   
+                     | Dance_Pro is a dance studio that offers a variety of dance classes for all ages and       skill levels. 
+                     | Our classes include ballet, tap, jazz, hip-hop, and more.
+        section#mission 
+                h2 Our Mission
+                .mew 
+                  .card  
+                      h3  Dance perfection
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, asperiores   reprehenderit ducimus saepe accusamus iste quas voluptates perspiciatis!
+                  .card  
+                      h3  Diverse Styles
+                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque natus iusto sit,   at placeat pariatur dolor dolorum veniam quia blanditiis?
+                  .card  
+                      h3  Expert Instructors 
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ut. Harum dolore   sed obcaecati, fugit totam repellat explicabo laboriosam veritatis?
+        section#sponsor 
+            h2  Our Sponsors
+            .sponsor 
+                img(src="static\\images\\client2.png", alt="lol")
+                img(src="static\\images\\spotify.png", alt="lol")
+                img(src="static\\images\\tesla_logo.png", alt="lol")
+                img(src="static\\images\\zomato_logo.png", alt="lol")      

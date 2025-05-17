@@ -1,0 +1,135 @@
+//- index.pug
+doctype html
+html
+    head
+        title Dance_Pro
+        link(rel='stylesheet', href='../static/style.css')
+    body
+        nav#navbar.top 
+            #logo 
+                img(src="/static/images/logo1.webp" alt="Logo of Dance_Pro")
+            ul
+                li
+                    a(href="/") Home
+                li
+                    a(href="/about") About
+                li 
+                    a(href="/services") Services
+                li 
+                    a(href="/classinfo") Class-Info
+                li
+                    a(href="/contact-us") Contact-us
+        section#home 
+                 img(src="static\\images\\h-1.jpg", alt="lol")
+                 h1 Welcome to Dance_Pro
+                 p   
+                     | Dance_Pro is a dance studio that offers a variety of dance classes for all ages and       skill levels. 
+                     | Our classes include ballet, tap, jazz, hip-hop, and more.
+        section#mission 
+                h2 Our Mission
+                .card  
+                    h3  Dance perfection
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, asperiores reprehenderit ducimus saepe accusamus iste quas voluptates perspiciatis!
+                .card  
+                    h3  Diverse Styles
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque natus iusto sit, at placeat pariatur dolor dolorum veniam quia blanditiis?
+                .card  
+                    h3  Expert Instructors 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ut. Harum dolore sed obcaecati, fugit totam repellat explicabo laboriosam veritatis?
+        section#member1
+            .mao 
+              h2  Become a Member
+              form(action="/", method="POST", id="member-form")
+                div 
+                  label(for="name") Name:
+                  br
+                  input(type="text", id="name", name="name",   required)
+                  br 
+
+                div 
+                  label(for="Gender") Gender: 
+                  br
+                  |Male
+                  input(type="checkbox")
+                  |Female 
+                  input(type="checkbox")
+                  br
+                  br
+
+                div 
+                  label(for="age") Age:
+                  br
+                  input(type="number", id="age", name="age",   required)
+                  br 
+
+                div
+                  label(for="email") Email:
+                  br 
+                  input(type="email", id="email", name="email",   required)
+                  br  
+
+                div 
+                  label(for="phone") Phone:
+                  br  
+                  input(type="tel", id="phone", name="phone",   required)
+                  br  
+
+                div
+                  label(for="More Info") More Info:
+                  br  
+                  textarea(id="info", name="More about you",   rows="3", cols="26")
+                  br 
+
+                div 
+                  button(type="submit") Submit
+        section#sponsor 
+            h2  Our Sponsors
+            .sponsor 
+                img(src="static\\images\\client2.png", alt="lol")
+                img(src="static\\images\\spotify.png", alt="lol")
+                img(src="static\\images\\tesla_logo.png", alt="lol")
+                img(src="static\\images\\zomato_logo.png", alt="lol")       
+        section#footer
+          .first 
+            h3 Dance_Pro
+            ul 
+                li 
+                    a(href="/") About 
+                li 
+                    a(href="/about") Help Center 
+                li 
+                    a(href="/services") Terms of use 
+                li 
+                    a(href="/classinfo") Cookies 
+                li 
+                    a(href="/contact-us") Privacy Policy
+          .second 
+            h3 Navigation 
+            ul 
+                li 
+                    a(href="/") Home 
+                li 
+                    a(href="/about") About 
+                li 
+                    a(href="/services") Services 
+                li 
+                    a(href="/classinfo") Class-Info 
+                li 
+                    a(href="/contact-us") Contact-us
+          .third
+            h3 Connect with us
+            ul 
+                li 
+                    a(href="/") Facebook 
+                li 
+                    a(href="/") Instagram 
+                li 
+                    a(href="www.twitter.com") Twitter 
+                li 
+                    a(href="/classinfo") LinkedIn 
+                li 
+                    a(href="/contact-us") YouTube
+        section#footer2
+            p © 2023 Dance_Pro. All rights reserved.
+            
+    include ../static/index.js 
